@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm24 : 크리스마스 카드</title>
+		<style>
+            div > p{
+                display: inline-block; /* div의 자식 p */
+            position: absolute; /*절대 비치 */
+            height: 25px;
+            width: 20px;
+            background: lightblue;
+            }
+            img {
+                position: absolute;
+            }
+            #a {
+                z-index: -5;
+                left: 10px;
+                top: 80px;
+            }
+            #b {
+                z-index: 3;
+                left: 30px;
+                top: 80px;
+            }
+           #fixed {
+				position: fixed;
+				bottom: 360px;
+				right: 110px;
+				width: 100px;
+				padding: 5px;
+				background: lightgray;
+               color: brown;
+            }
+            #fixed2 {
+				position: fixed;
+				bottom: 20px;
+				left: 10px;
+				width: 100px;
+				padding: 5px;
+				background: yellow;
+				color: black;
+    @keyframes bomb {
+from { font-size : 200%;}
+to { font-size : 100%;}
+}
+                         
+ {
+animation-name : bomb;
+animation-duration : 2s;
+animation-iteration-count : infinite;
+            }
+    
+          
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry X-MAS!</h3>
+		<hr>
+        <div>
+		<img id="a" src="media/christmas%20card.jpg"
+		width="500" height="500">
+        <img id="b" src="media/christmastree.png"
+        width="400" height="350">
+             </div>
+        
+		<div id="fixed"> hm24
+             
+		</div>
+        
+              <audio src="/media/song.htm" autoplay controls>
+        브라우저가 오디오를 지원합니다.</audio>
+        <div id="fixed"></div>
+        <h4>Merry Christmas</h4>
+  
+	</body>
+
+</html>
+
